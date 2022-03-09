@@ -12,29 +12,31 @@ html{
 
 
 body{
-  font-family:'Courier New', Courier, monospace
-}
+  font-family:'Courier New', Courier, monospace;
+  color: yellow;
 
-section.box{
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background-color: red;
 }
 
 header{
   position: fixed;
   right: 0;
   top: 30px;
+  /* un altro modo TOP:0 LEFT:0 E UL: FLOAT :RIGHT */
   z-index: 999;
 }
+
+section.box{
+  height: 100vh;
+  position: relative;
+  background-color: red;
+}
+
 
 
 h2{
   font-size: 5vw;
   font-weight: bolder;
   text-transform: uppercase;
-  color: yellow;
 }
 
 
@@ -60,6 +62,7 @@ ul li .push{
   line-height: 100%;
   border-radius: 50%;
   padding: 10px 15px;
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, .5);
 }
 
 
@@ -78,6 +81,7 @@ ul li .push:hover{
 ul li:active{
   position: relative;
   top: 5px;
+  /* altro metodo TRANSFORM: TRANSLATE ( OPX , 5PX) */
 
 }
 
